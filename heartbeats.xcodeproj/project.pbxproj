@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4BDA1AEB2F5528E4003F2F7C /* heartbeats Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4BDA1AEA2F5528E4003F2F7C /* heartbeats Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4BDA1B752F553972003F2F7C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4BDA1B742F553972003F2F7C /* FirebaseAuth */; };
+		4BDA1B772F553972003F2F7C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 4BDA1B762F553972003F2F7C /* FirebaseDatabase */; };
+		4BDA1B792F553972003F2F7C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4BDA1B782F553972003F2F7C /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BDA1B772F553972003F2F7C /* FirebaseDatabase in Frameworks */,
+				4BDA1B752F553972003F2F7C /* FirebaseAuth in Frameworks */,
+				4BDA1B792F553972003F2F7C /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +138,9 @@
 			);
 			name = "heartbeats Watch App";
 			packageProductDependencies = (
+				4BDA1B742F553972003F2F7C /* FirebaseAuth */,
+				4BDA1B762F553972003F2F7C /* FirebaseDatabase */,
+				4BDA1B782F553972003F2F7C /* FirebaseFirestore */,
 			);
 			productName = "heartbeats Watch App";
 			productReference = 4BDA1AEA2F5528E4003F2F7C /* heartbeats Watch App.app */;
@@ -164,6 +173,9 @@
 			);
 			mainGroup = 4BDA1AD42F5528E2003F2F7C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4BDA1B732F553972003F2F7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4BDA1ADE2F5528E3003F2F7C /* Products */;
 			projectDirPath = "";
@@ -497,6 +509,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4BDA1B732F553972003F2F7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4BDA1B742F553972003F2F7C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BDA1B732F553972003F2F7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		4BDA1B762F553972003F2F7C /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BDA1B732F553972003F2F7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		4BDA1B782F553972003F2F7C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BDA1B732F553972003F2F7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BDA1AD52F5528E2003F2F7C /* Project object */;
 }
