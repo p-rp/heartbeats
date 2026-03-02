@@ -3,260 +3,130 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1000001000000000000001 /* HeartbeatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000001 /* HeartbeatsApp.swift */; };
-		A1000002000000000000001 /* PairingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002000000000000001 /* PairingView.swift */; };
-		A1000003000000000000001 /* PairsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000003000000000000001 /* PairsListView.swift */; };
-		A1000004000000000000001 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000004000000000000001 /* MainTabView.swift */; };
-		A1000005000000000000001 /* PairedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000005000000000000001 /* PairedUser.swift */; };
-		A1000006000000000000001 /* HeartbeatSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000006000000000000001 /* HeartbeatSession.swift */; };
-		A1000007000000000000001 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000007000000000000001 /* FirebaseService.swift */; };
-		A1000008000000000000001 /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000008000000000000001 /* WatchConnectivityManager.swift */; };
-		A1000015000000000000001 /* SharedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000015000000000000001 /* SharedModels.swift */; };
+		4BDA1CF52F554E9F003F2F7C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4BDA1CF42F554E9F003F2F7C /* FirebaseAuth */; };
+		4BDA1CF72F554E9F003F2F7C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 4BDA1CF62F554E9F003F2F7C /* FirebaseDatabase */; };
+		4BDA1CF92F554E9F003F2F7C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4BDA1CF82F554E9F003F2F7C /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4BDA1C212F554179003F2F7C /* Heartbeats Watch App Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heartbeats Watch App Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0000001000000000000001 /* Heartbeats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heartbeats.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2000001000000000000001 /* HeartbeatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartbeatsApp.swift; sourceTree = "<group>"; };
-		A2000002000000000000001 /* PairingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingView.swift; sourceTree = "<group>"; };
-		A2000003000000000000001 /* PairsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsListView.swift; sourceTree = "<group>"; };
-		A2000004000000000000001 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		A2000005000000000000001 /* PairedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairedUser.swift; sourceTree = "<group>"; };
-		A2000006000000000000001 /* HeartbeatSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartbeatSession.swift; sourceTree = "<group>"; };
-		A2000007000000000000001 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
-		A2000008000000000000001 /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
-		A2000009000000000000001 /* HeartbeatsWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartbeatsWatchApp.swift; sourceTree = "<group>"; };
-		A2000010000000000000001 /* HeartbeatStreamingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartbeatStreamingView.swift; sourceTree = "<group>"; };
-		A2000011000000000000001 /* HeartbeatReceivingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartbeatReceivingView.swift; sourceTree = "<group>"; };
-		A2000012000000000000001 /* HeartbeatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartbeatViewModel.swift; sourceTree = "<group>"; };
-		A2000013000000000000001 /* HeartRateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateManager.swift; sourceTree = "<group>"; };
-		A2000014000000000000001 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
-		A2000015000000000000001 /* SharedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModels.swift; sourceTree = "<group>"; };
+		4BDA1AEA2F5528E4003F2F7C /* heartbeats Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "heartbeats Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4BDA1C252F554179003F2F7C /* Heartbeats Watch App Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Heartbeats Watch App Watch App"; sourceTree = "<group>"; };
+		4BDA1ADF2F5528E3003F2F7C /* heartbeats */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = heartbeats;
+			sourceTree = "<group>";
+		};
+		4BDA1AEE2F5528E4003F2F7C /* heartbeats Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "heartbeats Watch App";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4BDA1C1E2F554179003F2F7C /* Frameworks */ = {
+		4BDA1AE72F5528E4003F2F7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A3000001000000000000001 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				4BDA1CF72F554E9F003F2F7C /* FirebaseDatabase in Frameworks */,
+				4BDA1CF52F554E9F003F2F7C /* FirebaseAuth in Frameworks */,
+				4BDA1CF92F554E9F003F2F7C /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A4000001000000000000001 = {
+		4BDA1AD42F5528E2003F2F7C = {
 			isa = PBXGroup;
 			children = (
-				A4000002000000000000001 /* Heartbeats */,
-				A4000003000000000000001 /* Heartbeats Watch App */,
-				4BDA1C252F554179003F2F7C /* Heartbeats Watch App Watch App */,
-				A4000004000000000000001 /* Products */,
+				4BDA1ADF2F5528E3003F2F7C /* heartbeats */,
+				4BDA1AEE2F5528E4003F2F7C /* heartbeats Watch App */,
+				4BDA1ADE2F5528E3003F2F7C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A4000002000000000000001 /* Heartbeats */ = {
+		4BDA1ADE2F5528E3003F2F7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4000005000000000000001 /* App */,
-				A4000006000000000000001 /* Views */,
-				A4000007000000000000001 /* Models */,
-				A4000008000000000000001 /* Services */,
-				A4000009000000000000001 /* Resources */,
-			);
-			path = Heartbeats;
-			sourceTree = "<group>";
-		};
-		A4000003000000000000001 /* Heartbeats Watch App */ = {
-			isa = PBXGroup;
-			children = (
-				A400000B0000000000000001 /* Views */,
-				A400000C0000000000000001 /* ViewModels */,
-				A400000D0000000000000001 /* Managers */,
-			);
-			path = "Heartbeats Watch App";
-			sourceTree = "<group>";
-		};
-		A4000004000000000000001 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A0000001000000000000001 /* Heartbeats.app */,
-				4BDA1C212F554179003F2F7C /* Heartbeats Watch App Watch App.app */,
+				4BDA1AEA2F5528E4003F2F7C /* heartbeats Watch App.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A4000005000000000000001 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				A2000001000000000000001 /* HeartbeatsApp.swift */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		A4000006000000000000001 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				A2000004000000000000001 /* MainTabView.swift */,
-				A2000002000000000000001 /* PairingView.swift */,
-				A2000003000000000000001 /* PairsListView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		A4000007000000000000001 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				A2000005000000000000001 /* PairedUser.swift */,
-				A2000006000000000000001 /* HeartbeatSession.swift */,
-				A2000015000000000000001 /* SharedModels.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		A4000008000000000000001 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				A2000007000000000000001 /* FirebaseService.swift */,
-				A2000008000000000000001 /* WatchConnectivityManager.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		A4000009000000000000001 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		A400000B0000000000000001 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				A2000009000000000000001 /* HeartbeatsWatchApp.swift */,
-				A2000010000000000000001 /* HeartbeatStreamingView.swift */,
-				A2000011000000000000001 /* HeartbeatReceivingView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		A400000C0000000000000001 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				A2000012000000000000001 /* HeartbeatViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		A400000D0000000000000001 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				A2000013000000000000001 /* HeartRateManager.swift */,
-				A2000014000000000000001 /* HapticManager.swift */,
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4BDA1C202F554179003F2F7C /* Heartbeats Watch App Watch App */ = {
+		4BDA1AE92F5528E4003F2F7C /* heartbeats Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BDA1C2C2F55417A003F2F7C /* Build configuration list for PBXNativeTarget "Heartbeats Watch App Watch App" */;
+			buildConfigurationList = 4BDA1AF72F5528E5003F2F7C /* Build configuration list for PBXNativeTarget "heartbeats Watch App" */;
 			buildPhases = (
-				4BDA1C1D2F554179003F2F7C /* Sources */,
-				4BDA1C1E2F554179003F2F7C /* Frameworks */,
-				4BDA1C1F2F554179003F2F7C /* Resources */,
+				4BDA1AE62F5528E4003F2F7C /* Sources */,
+				4BDA1AE72F5528E4003F2F7C /* Frameworks */,
+				4BDA1AE82F5528E4003F2F7C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4BDA1C252F554179003F2F7C /* Heartbeats Watch App Watch App */,
+				4BDA1AEE2F5528E4003F2F7C /* heartbeats Watch App */,
 			);
-			name = "Heartbeats Watch App Watch App";
+			name = "heartbeats Watch App";
 			packageProductDependencies = (
+				4BDA1CF42F554E9F003F2F7C /* FirebaseAuth */,
+				4BDA1CF62F554E9F003F2F7C /* FirebaseDatabase */,
+				4BDA1CF82F554E9F003F2F7C /* FirebaseFirestore */,
 			);
-			productName = "Heartbeats Watch App Watch App";
-			productReference = 4BDA1C212F554179003F2F7C /* Heartbeats Watch App Watch App.app */;
-			productType = "com.apple.product-type.application";
-		};
-		A5000001000000000000001 /* Heartbeats */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A6000001000000000000001 /* Build configuration list for PBXNativeTarget "Heartbeats" */;
-			buildPhases = (
-				A7000001000000000000001 /* Sources */,
-				A3000001000000000000001 /* Frameworks */,
-				A7000002000000000000001 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Heartbeats;
-			productName = Heartbeats;
-			productReference = A0000001000000000000001 /* Heartbeats.app */;
+			productName = "heartbeats Watch App";
+			productReference = 4BDA1AEA2F5528E4003F2F7C /* heartbeats Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A8000001000000000000001 /* Project object */ = {
+		4BDA1AD52F5528E2003F2F7C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2630;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 2630;
 				TargetAttributes = {
-					4BDA1C202F554179003F2F7C = {
+					4BDA1AE92F5528E4003F2F7C = {
 						CreatedOnToolsVersion = 26.3;
 					};
 				};
 			};
-			buildConfigurationList = A6000003000000000000001 /* Build configuration list for PBXProject "heartbeats" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = 4BDA1AD82F5528E2003F2F7C /* Build configuration list for PBXProject "heartbeats" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = A4000001000000000000001;
-			productRefGroup = A4000004000000000000001 /* Products */;
+			mainGroup = 4BDA1AD42F5528E2003F2F7C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4BDA1CF32F554E9F003F2F7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4BDA1ADE2F5528E3003F2F7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5000001000000000000001 /* Heartbeats */,
-				4BDA1C202F554179003F2F7C /* Heartbeats Watch App Watch App */,
+				4BDA1AE92F5528E4003F2F7C /* heartbeats Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4BDA1C1F2F554179003F2F7C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7000002000000000000001 /* Resources */ = {
+		4BDA1AE82F5528E4003F2F7C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,98 +136,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4BDA1C1D2F554179003F2F7C /* Sources */ = {
+		4BDA1AE62F5528E4003F2F7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7000001000000000000001 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1000001000000000000001 /* HeartbeatsApp.swift in Sources */,
-				A1000004000000000000001 /* MainTabView.swift in Sources */,
-				A1000002000000000000001 /* PairingView.swift in Sources */,
-				A1000003000000000000001 /* PairsListView.swift in Sources */,
-				A1000005000000000000001 /* PairedUser.swift in Sources */,
-				A1000006000000000000001 /* HeartbeatSession.swift in Sources */,
-				A1000007000000000000001 /* FirebaseService.swift in Sources */,
-				A1000008000000000000001 /* WatchConnectivityManager.swift in Sources */,
-				A1000015000000000000001 /* SharedModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4BDA1C2D2F55417A003F2F7C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Heartbeats Watch App";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKWatchOnly = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "piyush.Heartbeats-Watch-App.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 26.2;
-			};
-			name = Debug;
-		};
-		4BDA1C2E2F55417A003F2F7C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Heartbeats Watch App";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKWatchOnly = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "piyush.Heartbeats-Watch-App.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 26.2;
-			};
-			name = Release;
-		};
-		A9000001000000000000001 /* Debug */ = {
+		4BDA1AF52F5528E5003F2F7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -409,18 +198,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		A9000002000000000000001 /* Release */ = {
+		4BDA1AF62F5528E5003F2F7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -466,94 +253,129 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
-		A9000003000000000000001 /* Debug */ = {
+		4BDA1AF82F5528E5003F2F7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Heartbeats/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = heartbeats;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = piyush.heartbeats;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.heartbeats.app;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = piyush.heartbeats.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Debug;
 		};
-		A9000004000000000000001 /* Release */ = {
+		4BDA1AF92F5528E5003F2F7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Heartbeats/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = heartbeats;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = piyush.heartbeats;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.heartbeats.app;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = piyush.heartbeats.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4BDA1C2C2F55417A003F2F7C /* Build configuration list for PBXNativeTarget "Heartbeats Watch App Watch App" */ = {
+		4BDA1AD82F5528E2003F2F7C /* Build configuration list for PBXProject "heartbeats" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BDA1C2D2F55417A003F2F7C /* Debug */,
-				4BDA1C2E2F55417A003F2F7C /* Release */,
+				4BDA1AF52F5528E5003F2F7C /* Debug */,
+				4BDA1AF62F5528E5003F2F7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6000001000000000000001 /* Build configuration list for PBXNativeTarget "Heartbeats" */ = {
+		4BDA1AF72F5528E5003F2F7C /* Build configuration list for PBXNativeTarget "heartbeats Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A9000003000000000000001 /* Debug */,
-				A9000004000000000000001 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A6000003000000000000001 /* Build configuration list for PBXProject "heartbeats" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9000001000000000000001 /* Debug */,
-				A9000002000000000000001 /* Release */,
+				4BDA1AF82F5528E5003F2F7C /* Debug */,
+				4BDA1AF92F5528E5003F2F7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4BDA1CF32F554E9F003F2F7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4BDA1CF42F554E9F003F2F7C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BDA1CF32F554E9F003F2F7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		4BDA1CF62F554E9F003F2F7C /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BDA1CF32F554E9F003F2F7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		4BDA1CF82F554E9F003F2F7C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BDA1CF32F554E9F003F2F7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = A8000001000000000000001 /* Project object */;
+	rootObject = 4BDA1AD52F5528E2003F2F7C /* Project object */;
 }
