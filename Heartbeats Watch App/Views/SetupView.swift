@@ -11,34 +11,75 @@ struct SetupView: View {
     @EnvironmentObject var appState: AppState
     @State private var showingGenerateCode = false
     @State private var showingEnterCode = false
+    @State private var heartScale: CGFloat = 1.0
+    @State private var heartScale2: CGFloat = 1.0
+    @State private var linePhase: CGFloat = 0.0
+    @State private var lineOpacity: CGFloat = 0.0
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 16) {
-                // Heart icon
-                Image(systemName: "heart.fill")
-                    .font(.system(size: 40))
-                    .foregroundStyle(
-                        LinearGradient(
-                            colors: [.pink, .red],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
+        VStack(spacing: 8) {
+                // Two hearts with electric connection
+                HStack(spacing: 0) {
+                    // Left heart
+                    Image(systemName: "heart.fill")
+                        .font(.system(size: 28))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.pink, .red],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
                         )
-                    )
-                    .symbolEffect(.pulse)
-                    .padding(.top, 8)
+                        .scaleEffect(heartScale)
+                        .shadow(color: .red.opacity(0.5), radius: heartScale * 4)
+                    
+                    // Flowing blue connection line
+                    Rectangle()
+                        .fill(
+                            LinearGradient(
+                                colors: [.cyan, .blue, .cyan],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        .mask(
+                            Rectangle()
+                                .fill(
+                                    LinearGradient(
+                                        colors: [.clear, .white, .clear],
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
+                                )
+                                .offset(x: -60 + linePhase * 120)
+                        )
+                        .opacity(0.8)
+                        .frame(height: 3)
+                    
+                    // Right heart
+                    Image(systemName: "heart.fill")
+                        .font(.system(size: 28))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.red, .pink],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                        .scaleEffect(heartScale2)
+                        .shadow(color: .red.opacity(0.5), radius: heartScale2 * 4)
+                }
+                .padding(.top, 0)
                 
                 Text("Connect Hearts")
-                    .font(.title3)
+                    .font(.headline)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                 
-                Text("Pair with someone to feel their heartbeat")
-                    .font(.caption)
+                Text("Pair with someone")
+                    .font(.caption2)
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
-                
-                Spacer(minLength: 8)
                 
                 // Generate code button
                 Button(action: { showingGenerateCode = true }) {
@@ -46,12 +87,12 @@ struct SetupView: View {
                         Image(systemName: "qrcode")
                         Text("Generate Code")
                     }
-                    .font(.headline)
+                    .font(.caption)
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
-                    .padding(.vertical, 12)
+                    .padding(.vertical, 8)
                     .background(
-                        RoundedRectangle(cornerRadius: 12)
+                        RoundedRectangle(cornerRadius: 10)
                             .fill(
                                 LinearGradient(
                                     colors: [.pink, .purple],
@@ -69,12 +110,12 @@ struct SetupView: View {
                         Image(systemName: "number.square")
                         Text("Enter Code")
                     }
-                    .font(.headline)
+                    .font(.caption)
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
-                    .padding(.vertical, 12)
+                    .padding(.vertical, 8)
                     .background(
-                        RoundedRectangle(cornerRadius: 12)
+                        RoundedRectangle(cornerRadius: 10)
                             .fill(
                                 LinearGradient(
                                     colors: [.blue, .cyan],
@@ -85,15 +126,34 @@ struct SetupView: View {
                     )
                 }
                 .buttonStyle(PlainButtonStyle())
-            }
-            .padding(.horizontal, 8)
         }
+        .padding(.horizontal, 6)
         .background(Color.black)
         .sheet(isPresented: $showingGenerateCode) {
             GenerateCodeView()
         }
         .sheet(isPresented: $showingEnterCode) {
             EnterCodeView()
+        }
+        .onAppear {
+            startAnimations()
+        }
+    }
+    
+    private func startAnimations() {
+        // Heart 1 animation - pulse
+        withAnimation(.easeInOut(duration: 0.8).repeatForever(autoreverses: true)) {
+            heartScale = 1.15
+        }
+        
+        // Heart 2 animation - beat together with heart 1
+        withAnimation(.easeInOut(duration: 0.8).repeatForever(autoreverses: true)) {
+            heartScale2 = 1.2
+        }
+        
+        // Flowing line animation
+        withAnimation(.linear(duration: 2.0).repeatForever(autoreverses: false)) {
+            linePhase = 5.0
         }
     }
 }

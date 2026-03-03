@@ -51,7 +51,7 @@ struct GenerateCodeView: View {
                 } else {
                     VStack(spacing: 12) {
                         Text(generatedCode)
-                            .font(.system(size: 36, weight: .bold, design: .monospaced))
+                            .font(.system(size: 32, weight: .bold, design: .monospaced))
                             .foregroundStyle(
                                 LinearGradient(
                                     colors: [.cyan, .blue],
@@ -59,7 +59,7 @@ struct GenerateCodeView: View {
                                     endPoint: .trailing
                                 )
                             )
-                            .tracking(2)
+                            .tracking(4)
                         
                         Text("Share this code with your partner")
                             .font(.caption)
