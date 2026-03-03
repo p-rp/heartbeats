@@ -9,12 +9,11 @@ import Foundation
 
 enum CodeGenerator {
     static func generatePairingCode() -> String {
-        let randomNumber = String(format: "%04d", Int.random(in: 1000...9999))
-        return "BEAT-\(randomNumber)"
+        return String(format: "%06d", Int.random(in: 0...999999))
     }
     
     static func isValidCode(_ code: String) -> Bool {
-        let pattern = "^BEAT-\\d{4}$"
+        let pattern = "^\\d{6}$"
         return code.range(of: pattern, options: .regularExpression) != nil
     }
 }

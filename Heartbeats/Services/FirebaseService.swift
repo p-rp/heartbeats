@@ -60,15 +60,16 @@ class FirebaseService: ObservableObject {
     }
 
     // MARK: - Connection Code Generation
-    /// Generates a unique 6-character connection code
+    /// Generates a unique 6-digit connection code
     func generateConnectionCode() -> String {
-        let characters = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789" // Removed similar looking characters
-        let code = String((0..<6).map { _ in characters.randomElement()! })
-        return code
+        return String(format: "%06d", Int.random(in: 0...999999))
     }
-
+    
     /// Validates a connection code and returns the associated user ID if valid
     func validateConnectionCode(_ code: String) async -> String? {
+        guard code.count == 6, code.allSatisfy({ $0.isNumber }) else {
+            return nil
+        }
         // Query Firebase for user with this connection code
         let urlString = "\(databaseURL)/users.json?orderBy=\"connectionCode\"&equalTo=\"\(code)\""
 
@@ -138,6 +139,7 @@ class FirebaseService: ObservableObject {
                 let pairData: [String: Any] = [
                     "user1Id": userId,
                     "user2Id": partnerId,
+                    "user1Name": name,
                     "createdAt": ISO8601DateFormatter().string(from: Date())
                 ]
 
