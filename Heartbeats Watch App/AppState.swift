@@ -42,4 +42,9 @@ class AppState: ObservableObject {
         self.partnerName = nil
         self.isPaired = false
     }
+    
+    func updatePartnerName(_ name: String) {
+        userDefaults.set(name, forKey: partnerNameKey)
+        self.partnerName = name
+    }
 }

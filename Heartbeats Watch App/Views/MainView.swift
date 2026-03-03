@@ -11,6 +11,8 @@ struct MainView: View {
     @EnvironmentObject var appState: AppState
     @State private var showingRequestHeartbeat = false
     @State private var partnerStatus: PartnerStatus = .offline
+    @State private var showingRenameAlert = false
+    @State private var newPartnerName = ""
     
     enum PartnerStatus {
         case online
@@ -53,10 +55,16 @@ struct MainView: View {
                     }
                     
                     // Partner name
-                    Text(appState.partnerName ?? "Partner")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
+                    Button(action: {
+                        newPartnerName = appState.partnerName ?? "Partner"
+                        showingRenameAlert = true
+                    }) {
+                        Text(appState.partnerName ?? "Partner")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                    }
+                    .buttonStyle(PlainButtonStyle())
                     
                     // Heart animation
                     Image(systemName: "heart.fill")
@@ -151,6 +159,15 @@ struct MainView: View {
             // TODO: Check partner status from Firebase
             // This will be implemented in Phase 2.5
             checkPartnerStatus()
+        }
+        .alert("Rename Partner", isPresented: $showingRenameAlert) {
+            TextField("Name", text: $newPartnerName)
+            Button("Cancel", role: .cancel) {}
+            Button("Save") {
+                if !newPartnerName.isEmpty {
+                    appState.updatePartnerName(newPartnerName)
+                }
+            }
         }
     }
     
