@@ -57,20 +57,13 @@ class PairingService {
     // MARK: - Complete Pairing
     
     func completePairing(userA: String, userB: String) async throws {
-        let userARef = db.reference().child("users").child(userA)
-        let userBRef = db.reference().child("users").child(userB)
-        
-        // Use batch for atomic operation
-        let updates: [String: Any] = [
+        try await db.reference().updateChildValues([
             "users/\(userA)/pairedWith": userB,
             "users/\(userA)/pairedWithName": "Partner",
             "users/\(userB)/pairedWith": userA,
             "users/\(userB)/pairedWithName": "Partner"
-        ]
+        ])
         
-        try await db.reference().updateChildValues(updates)
-        
-        // Save locally
         UserDefaults.standard.set(userB, forKey: Constants.UserDefaults.pairedWithKey)
         UserDefaults.standard.set("Partner", forKey: Constants.UserDefaults.partnerNameKey)
     }
