@@ -15,6 +15,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BDA1AE62F5528E5003F2F7D"
+               BuildableName = "heartbeats.app"
+               BlueprintName = "heartbeats"
+               ReferencedContainer = "container:heartbeats.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "4BDA1AE92F5528E4003F2F7C"
                BuildableName = "heartbeats Watch App.app"
                BlueprintName = "heartbeats Watch App"
@@ -44,9 +58,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BDA1AE92F5528E4003F2F7C"
-            BuildableName = "heartbeats Watch App.app"
-            BlueprintName = "heartbeats Watch App"
+            BlueprintIdentifier = "4BDA1AE62F5528E5003F2F7D"
+            BuildableName = "heartbeats.app"
+            BlueprintName = "heartbeats"
             ReferencedContainer = "container:heartbeats.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,9 +75,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BDA1AE92F5528E4003F2F7C"
-            BuildableName = "heartbeats Watch App.app"
-            BlueprintName = "heartbeats Watch App"
+            BlueprintIdentifier = "4BDA1AE62F5528E5003F2F7D"
+            BuildableName = "heartbeats.app"
+            BlueprintName = "heartbeats"
             ReferencedContainer = "container:heartbeats.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
