@@ -19,7 +19,7 @@ struct PairingView: View {
     ]
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(spacing: 20) {
                 // My Connection Code Section
                 VStack(spacing: 12) {
@@ -133,7 +133,7 @@ struct PairingView: View {
                         .disabled(connectionCode.count >= 6 || isLoading)
                         
                         // Connect button
-                        Button(action: { pairWithPartner() }) {
+                        Button(action: { Task { await pairWithPartner() } }) {
                             if isLoading {
                                 ProgressView()
                                     .progressViewStyle(CircularProgressViewStyle(tint: .white))

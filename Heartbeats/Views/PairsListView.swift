@@ -7,7 +7,7 @@ struct PairsListView: View {
     @State private var userToDelete: PairedUser?
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 if firebaseService.pairedUsers.isEmpty {
                     // Empty state
